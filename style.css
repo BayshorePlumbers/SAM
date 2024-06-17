@@ -1,0 +1,222 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+.calculator {
+    padding: 10px;
+    border: 2px solid #121111;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    color: #000; /* Ensure the text color is black */
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+
+.checkbox-container label {
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #ea8a6d;
+    color: #121111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 30px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #c67358;
+}
+
+.output-group {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.output-group label,
+.output-group span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+#finalPrice {
+    font-weight: bold;
+}
+
+.notes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.notes-section textarea {
+    width: calc(100% - 20px);
+    height: 70px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.pay-rates-section,
+.office-use-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Pay Rates Section Styles */
+.pay-rates-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.pay-rates-section .column {
+    flex: 1 1 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.pay-rates-section .column label,
+.pay-rates-section .column input {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* For Office Use Only Section Styles */
+.office-use-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
+}
+
+.office-use-section .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.office-use-section .column label,
+.office-use-section .column input {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 12px);
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    color: #000; /* Ensure the text color is black */
+}
